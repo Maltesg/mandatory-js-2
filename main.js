@@ -42,9 +42,10 @@ function draw(){
       secondPlayer.push(Number(this.dataset.index));
       if(check(secondPlayer)){
         winnerpleyr("Congrats player two you win");
+
       }
     }
-    if(count === 9){
+    if(count === 9 && check(firstPlayer) === false && check(secondPlayer) === false){
       winnerpleyr("Draw");
     }
   }
